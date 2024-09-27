@@ -22,6 +22,9 @@ public class Movie {
     @Column(name = "director")
     private String director;
 
+    @Column(name = "duration")
+    private String duration;
+
     @Column(name = "rating")
     private Float rating;
 
@@ -55,6 +58,14 @@ public class Movie {
 
     public void setGenre(String genre) {
         this.genre = genre;
+    }
+
+    public String getDuration() {
+        return duration;
+    }
+
+    public void setDuration(String duration) {
+        this.duration = duration;
     }
 
     public String getDirector() {
